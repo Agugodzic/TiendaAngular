@@ -1,0 +1,153 @@
+#contenido {
+  background-color: rgb(255, 255, 255);
+  padding-right: 50px;
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 35px;
+  border-radius: 8px;
+  border: 1px;
+  border-color: rgba(0, 0, 0, 0.11);
+  border-style: solid;
+  min-height: 510px;
+  height: auto;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+#imagen-producto {
+  display: inline;
+  height: 400px;
+  box-shadow: 2px 5px 10px rgba(39, 39, 39, 0.192);
+  margin: 50px;
+  margin-left: 50px;
+  margin-right: 100px;
+  float: left;
+  border: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.151);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#descripcion {
+  text-align: right;
+  padding: 50px;
+}
+
+#texto-descripcion {
+  text-align: justify;
+  font-size: 18px;
+}
+
+#precio {
+  color: rgb(5, 167, 40);
+  font-size: 30px;
+}
+
+#agregar {
+  background-color: rgb(68, 90, 218);
+  height: 35px;
+  width: 120px;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+#agregar:hover {
+  background-color: rgb(36, 60, 194);
+  cursor: pointer;
+}
+
+span {
+  float: left;
+  font-size: 15px;
+  text-align: center;
+}
+
+#relacionados {
+  text-align: left;
+  font-family: 'Red Hat Display', sans-serif;
+  margin-left: 100px;
+}
+
+p {
+  font-family: Lato;
+}
+
+#galeria {
+  margin: 50px;
+  margin-top: 20px;
+  background: rgba(35, 68, 216, 0);
+  display: block;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.imagen {
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.185);
+  margin-bottom: 6px;
+}
+
+.producto {
+  display: inline-block;
+  width: 150px;
+  height: 310px;
+  background-color: rgba(255, 255, 255, 0.466);
+  text-align: center;
+  padding: 13px;
+  margin: 5px;
+  box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.137);
+  cursor: pointer;
+}
+
+.contenedorProducto {
+  display: inline-block;
+}
+
+span {
+  margin: 3px;
+}
+
+.nombre-producto {
+  font-size: 17px;
+}
+.descripcion-producto {
+  font-size: 15px;
+  margin: 1px;
+}
+.precio-producto {
+  color: rgba(16, 100, 16, 0.836);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+.imagen-miniatura {
+  display: block;
+  border: 1px;
+  width: 60px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.171);
+  border-radius: 4px;
+  margin: 10px;
+  margin-top: 50px;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+#miniaturas {
+  float: left;
+}
+
+#imagenes-producto {
+  background-color: rgb(112, 112, 112);
+}
+
+#verMas {
+  padding: 5px 8px 5px 8px;
+  cursor: pointer;
+  font-size: 15px;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+}

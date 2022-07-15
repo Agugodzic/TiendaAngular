@@ -1,0 +1,19 @@
+----------------- VARIABLES --------------------
+ 
+productosService - contiene todos los productos sin filtrar.
+  utilizada por :  filtrarProductos()
+                   ordenarProductos()
+                   ultimaPagina()
+                   productosEnPantalla() 'solo como estado inicial'
+                
+
+productosPaginaActual : contiene los productos que se ven en la pagina donde nos encontramos. Es lo que se muestra en el template.
+  utilizada por :  productosPaginaActual()
+                   actualizarLista()
+
+
+productos: contiene los productos que se ven en la pagina actual.
+  utilizada por :  paginas()
+                   productosPaginaActual()
+                   actualizarLista()
+

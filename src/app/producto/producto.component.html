@@ -1,0 +1,56 @@
+<div id="contenido">
+  <div id="imagenes-producto">
+    <div id="miniaturas">
+      <img
+        class="imagen-miniatura"
+        [src]="producto.imagen"
+        (click)="cambiarImagen(producto.imagen)"
+      />
+      <div *ngFor="let imagen of producto.imagenes">
+        <img
+          class="imagen-miniatura"
+          [src]="imagen"
+          (click)="cambiarImagen(imagen)"
+        />
+      </div>
+    </div>
+    <img id="imagen-producto" [src]="imagenSeleccionada" />
+  </div>
+  <div id="descripcion">
+    {{ producto.producto }} / {{ producto.marca }}
+    <h2 id="titulo">{{ producto.nombre }}</h2>
+    <h2 id="precio">{{ precio(producto.precio, 0) }}</h2>
+    <button id="agregar">
+      <span class="material-symbols-outlined"> shopping_cart </span>Agregar
+    </button>
+    <p id="texto-descripcion">
+      {{ producto.descripcionProducto }}
+    </p>
+  </div>
+  <button id="verMas">Ver mas</button>
+  <div id="relacionados">
+    <h2>Productos relacionados:</h2>
+    <div id="galeria">
+      <div class="contenedorProducto" *ngFor="let elemento of productos">
+        <a
+          [href]="productoLink(elemento)"
+          class="producto"
+          *ngIf="
+            (elemento.producto == producto.producto ||
+              elemento.marca == producto.marca) &&
+            elemento.nombre != producto.nombre
+          "
+        >
+          <img [src]="elemento.imagen" class="imagen" />
+          <div class="descripcion">
+            <p class="nombre-producto">{{ elemento.nombre }}</p>
+            <p class="descripcion-producto">
+              {{ longitud(elemento.descripcion, 30) }}...
+            </p>
+            <p class="precio-producto">{{ precio(elemento.precio, 0) }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

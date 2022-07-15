@@ -1,0 +1,41 @@
+#contenido {
+  background-color: rgb(255, 255, 255);
+  color: 'red';
+  margin: 20px 200px 20px 200px;
+  padding: 50px 20px 30px 20px;
+  box-shadow: 2px 5px 10px rgba(39, 39, 39, 0.192);
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+}
+#comprar {
+  color: aliceblue;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  padding: 8px 18px 8px 18px;
+  background-color: rgb(51, 85, 236);
+  border: None;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#contenedorProductos {
+  background-color: rgba(219, 219, 219, 0.651);
+  width: 600px;
+  min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+}
+
+#total {
+  font-family: 'Lato';
+  color: rgb(16, 129, 5);
+  font-size: 20px;
+  display: block;
+  text-align: right;
+}

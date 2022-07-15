@@ -1,0 +1,70 @@
+#chango {
+  height: 25px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+#logo {
+  height: 30px;
+  position: absolute;
+  left: 45px;
+  top: 20px;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+#nav {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  display: flex;
+  border-radius: 5px;
+  text-align: center;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+  box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.253);
+  position: sticky;
+  animation-name: transicionNavegador;
+  animation-duration: 0.6s;
+}
+
+.boton {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 20px;
+  margin-left: 8px;
+  transition: 0.1s;
+  color: rgba(0, 0, 0, 0.747);
+}
+
+a {
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(184, 184, 184);
+  margin: 0px;
+  height: 15px;
+  padding: 15px;
+  font-size: 14px;
+}
+#vista {
+  margin: 0px;
+}
+
+@keyframes transicionNavegador {
+  0% {
+    opacity: 0%;
+    transform: translatey(-30px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
